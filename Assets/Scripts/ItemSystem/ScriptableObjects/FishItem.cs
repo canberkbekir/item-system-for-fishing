@@ -11,6 +11,7 @@ namespace ItemSystem.ScriptableObjects
         [SerializeField] private int rarity;
         [SerializeField] private float averagePrice;
         [SerializeField] private float averageLength;
+        [SerializeField] private GameObject prefab;
 
         [Header("Luck Ranges")]
         [SerializeField] private List<LuckRange> luckRanges = new List<LuckRange>();
@@ -21,6 +22,17 @@ namespace ItemSystem.ScriptableObjects
         public float AveragePrice => averagePrice;
         public float AverageLength => averageLength;
         public float Scale => length / averageLength; 
+        public GameObject Prefab
+        {
+            get
+            {
+                if (prefab)
+                {
+                    prefab.transform.localScale = Vector3.one * Scale;
+                }
+                return prefab;
+            }
+        }     
         public void GetRandomAttributesBasedOnLuck(float luck)
         { 
             var _luck = Random.Range(0f, 100f);

@@ -25,6 +25,7 @@ namespace ItemSystem
         float AveragePrice { get; } 
         float AverageLength { get; }
         int Rarity { get; }
+        GameObject Prefab { get; }
     }
 
     public interface IRod
