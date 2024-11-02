@@ -17,8 +17,8 @@ MonoBehaviour:
   description: 
   itemType: 0
   rarity: 0
-  weight: 174.81734
-  length: 63.04247
+  weight: 15.976346
+  length: 29.692795
   averagePrice: 1
   averageLength: 20
   prefab: {fileID: 294181414240528367, guid: 4252079d04bb845209683e8f56621b68, type: 3}
@@ -43,4 +43,4 @@ MonoBehaviour:
     minWeight: 174.81734
     maxWeight: 174.81734
     minLength: 63.04247
-    maxLength: 63.04247
+    maxLength: 150

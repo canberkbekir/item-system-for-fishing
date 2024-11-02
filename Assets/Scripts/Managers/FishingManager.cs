@@ -1,5 +1,4 @@
-using System;
-using ItemSystem.ScriptableObjects.Containers;
+using InventorySystem.ScriptableObjects.Containers;
 using UnityEngine;
 
 namespace Managers
@@ -8,7 +7,12 @@ namespace Managers
     {
         [SerializeField] private Transform fishingSpawnPoint;
         [SerializeField] private FishItemLibrary fishItemLibrary;
-        
+
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.F)) SpawnFish();
+        }
+
         public void SpawnFish()
         {
             var fishItem = fishItemLibrary.GetRandomFishItem(0);
@@ -17,16 +21,9 @@ namespace Managers
                 Debug.LogError("FishItem or its Prefab is null.");
                 return;
             }
+
             var fish = Instantiate(fishItem.Prefab, fishingSpawnPoint.position, Quaternion.identity);
             fish.GetComponent<Rigidbody>().AddForce(Vector3.up * 5, ForceMode.Impulse);
-        }
-
-        private void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.F))
-            {
-                SpawnFish();
-            }
         }
     }
 }

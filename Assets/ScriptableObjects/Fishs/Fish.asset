@@ -17,10 +17,10 @@ MonoBehaviour:
   description: 
   itemType: 0
   rarity: 0
-  weight: 2.1918385
-  length: 4.5297565
+  weight: 2
+  length: 3
   averagePrice: 5
-  averageLength: 2
+  averageLength: 5
   prefab: {fileID: 5222451426074493332, guid: e26fb88c7f17d4e67a98a9c873be20ca, type: 3}
   luckRanges:
   - chanceRangeStart: 0
