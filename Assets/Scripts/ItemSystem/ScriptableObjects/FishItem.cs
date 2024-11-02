@@ -7,8 +7,7 @@ namespace ItemSystem.ScriptableObjects
     public class FishItem : BaseItem, IFish
     {
         [SerializeField] private float weight;
-        [SerializeField] private float length;
-        [SerializeField] private int rarity;
+        [SerializeField] private float length; 
         [SerializeField] private float averagePrice;
         [SerializeField] private float averageLength;
         [SerializeField] private GameObject prefab;
@@ -16,9 +15,9 @@ namespace ItemSystem.ScriptableObjects
         [Header("Luck Ranges")]
         [SerializeField] private List<LuckRange> luckRanges = new List<LuckRange>();
 
+        
         public float Weight => weight;
-        public float Length => length;
-        public int Rarity => rarity;
+        public float Length => length; 
         public float AveragePrice => averagePrice;
         public float AverageLength => averageLength;
         public float Scale => length / averageLength; 

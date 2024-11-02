@@ -16,28 +16,31 @@ MonoBehaviour:
   icon: {fileID: 0}
   description: 
   itemType: 0
-  weight: 199.53313
-  length: 61.94361
   rarity: 0
+  weight: 174.81734
+  length: 63.04247
   averagePrice: 1
   averageLength: 20
   prefab: {fileID: 294181414240528367, guid: 4252079d04bb845209683e8f56621b68, type: 3}
   luckRanges:
   - chanceRangeStart: 0
     chanceRangeEnd: 33
+    rarity: 0
     minWeight: 1
     maxWeight: 20
     minLength: 2
     maxLength: 30
-  - chanceRangeStart: 34
-    chanceRangeEnd: 66
-    minWeight: 23
-    maxWeight: 45
-    minLength: 22
-    maxLength: 45
-  - chanceRangeStart: 67
+  - chanceRangeStart: 33.001
+    chanceRangeEnd: 76.6
+    rarity: 0
+    minWeight: 174.81734
+    maxWeight: 174.81734
+    minLength: 63.04247
+    maxLength: 63.04247
+  - chanceRangeStart: 76.601
     chanceRangeEnd: 100
-    minWeight: 100
-    maxWeight: 200
-    minLength: 60
-    maxLength: 80
+    rarity: 0
+    minWeight: 174.81734
+    maxWeight: 174.81734
+    minLength: 63.04247
+    maxLength: 63.04247

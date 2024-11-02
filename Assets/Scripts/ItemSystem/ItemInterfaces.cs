@@ -1,3 +1,4 @@
+using ItemSystem.ScriptableObjects;
 using UnityEngine;
 
 namespace ItemSystem
@@ -16,33 +17,33 @@ namespace ItemSystem
         Sprite Icon { get; }
         string Description { get; }
         ItemType Type { get; }
+        RarityType Rarity { get; }
     }
 
-    public interface IFish
+    public interface IFish : IItem
     {
         float Weight { get; }
         float Length { get; } 
         float AveragePrice { get; } 
-        float AverageLength { get; }
-        int Rarity { get; }
+        float AverageLength { get; } 
         GameObject Prefab { get; }
     }
 
-    public interface IRod
+    public interface IRod: IItem
     {
         float Durability { get; }
         float CastingRange { get; }
         int Strength { get; }
     }
 
-    public interface ILure
+    public interface ILure: IItem
     {
         float AttractionRate { get; }
         float SinkSpeed { get; }
         bool IsFloating { get; }
     }
 
-    public interface IUsable
+    public interface IUsable: IItem
     {
         int Quantity { get; }
         float EffectDuration { get; }

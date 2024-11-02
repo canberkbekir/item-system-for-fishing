@@ -10,7 +10,7 @@ namespace ItemSystem.ScriptableObjects
         public float chanceRangeStart;
         [Range(0, 100)] 
         public float chanceRangeEnd;
-
+        public RarityType rarity;
         public float minWeight;
         public float maxWeight;
     
